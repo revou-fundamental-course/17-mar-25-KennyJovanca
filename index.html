@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KATIK</title>
+    <title>KATIK - Kalkulator Matematik</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -13,16 +13,37 @@
     </header>
 
     <main>
-    <p>Teks</p>
+        <div class="nav-fitur">
+            <a href="#persegi">Persegi</a>
+            <a href="#persegi-panjang">Persegi Panjang</a>
+        </div>
 
-    <div class="nav-fitur">
-        <a href="">Persegi</a>
-        <a href="" class="nav-fitur-active">Persegi Panjang</a>
-    </div>
+        <section id="persegi">
+            <header><h2>Kalkulator Persegi</h2></header>
+            <img src="assets/persegi.jpg" alt="Gambar Persegi">
+            <br>
+            <label for="sisi">Sisi:</label>
+            <input type="number" id="sisi" placeholder="Masukkan sisi">
+            <br>
+            <button onclick="hitungPersegi()">Hitung</button>
+            <p id="hasil-persegi"></p>
+        </section>
 
-    <section>
-        <header><h1>Luas Persegi</h1></header>
-    </section>
-</main>
+        <section id="persegi-panjang">
+            <header><h2>Kalkulator Persegi Panjang</h2></header>
+            <img src="assets/persegi panjang.jpg" alt="Gambar Persegi panjang">
+            <br>
+            <label for="panjang">Panjang:</label>
+            <input type="number" id="panjang" placeholder="Masukkan panjang">
+            <br>
+            <label for="lebar">Lebar:</label>
+            <input type="number" id="lebar" placeholder="Masukkan lebar">
+            <br>
+            <button onclick="hitungPersegiPanjang()">Hitung</button>
+            <p id="hasil-persegi-panjang"></p>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
