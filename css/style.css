@@ -1,0 +1,38 @@
+.main-header{
+    margin: 0px;
+    background-color: blanchedalmond;
+    text-align: center;
+    padding: 8px;
+}
+main{
+    background-color: cornsilk;
+    padding: 16px;
+    text-align: center;
+}
+.nav-fitur{
+    display: flex;
+    flex-direction: column;
+}
+.nav-fitur>a {
+    background-color: cornflowerblue;
+    color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 50%;
+    align-self: center;
+}
+
+
+
+
+
+
+
+
+
+.nav-fitur-non-active{
+    background-color: aqua;
+}
+.nav-fitur-active{
+    background-color: blue;
+}
